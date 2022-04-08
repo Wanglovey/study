@@ -480,6 +480,62 @@ module.exports = {
 
 在插件中详情面板中（通过拓展管理进入），打开允许访问文件网址，即配置完成
 
+## axios
+
+axios是一个专注于网络请求的库，是前端圈最火的专注于数据请求的库
+
+在后面的vue、react课程中都会用到axios来请求数据
+
+中文官网：http://www.axios-js.com
+
+英文官网：https://www.npmjs.com/package/axios
+
+- 下载方式
+
+```
+npm i axios
+```
+
+- axios的基本语法
+
+```javascript
+axios({
+	// 请求方式
+    method: '请求的类型',
+    // 请求的地址
+    url: '请求的URL地址',
+    // URL中的查询参数，可选
+    params:{},
+    // 请求体参数，可选
+    data:{}
+}).then((result)=>{
+    // result中存储了请求成功后被axios封装后的结果
+})
+
+// 利用async、await修饰的写法
+async ()=>{
+    // 以下写法是解构了返回值并将其重命名的写法
+    // 获取返回值中data对象的数据，并将其重命名为res
+    const {data: res} = axios({
+        // 请求方式
+        method: '请求的类型',
+        // 请求的地址
+        url: '请求的URL地址',
+        // URL中的查询参数，可选
+        params:{},
+        // 请求体参数，可选
+        data:{}
+    })
+}
+// 还可以直接使用axios.get("url",{params对象参数})和axios.post("url",{data对象参数})的方式发送请求
+```
+
+> 调用axios方法得到的返回值是Promise对象
+>
+> 如果调用某个方法的返回值是Promise实例，则前面可以添加await，但是要注意在外部函数前需要添加async声明，添加了await修饰符的Promise实例返回的不再是Promise对象，而是其中的参数，避免了使用.then的麻烦
+>
+> 注意，axios在请求到数据之后会在真实数据外部进行一层包装，将真实数据添加到大对象中的data对象中，然后还会在大对象中添加config对象、headers对象、request对象和status、statusText
+
 ## vue2.0
 
 ### vue简介
@@ -884,5 +940,396 @@ v-for指令需要使用item in items形式的特殊语法，其中
         }
     })
 </script>
+```
+
+#### 过滤器（vue3已将其淘汰）
+
+> 注意：在vue3中已经将过滤器模块删除了，因此过滤器只能在vue2中使用，因此此部分内容仅仅介绍基本内容
+
+##### 过滤器基础
+
+过滤器（Filters）是vue为开发者提供的功能，常用于文本的格式化。过滤器可以用在两个地方：插值表达式和v-bind属性绑定
+
+过滤器应该被添加在js表达式的尾部，由**“管道符”**进行调用
+
+> 过滤器本质上是一个函数，过滤器使用之前要先在filters中进行定义。
+>
+> 过滤器使得最终网页中显示的结果为函数的返回值
+>
+> 过滤器中一定要有返回值！！！
+
+- 用法示例
+
+```html
+<div id="app">
+    <!-- 在插值表达式中通过“管道符”调用capitalize过滤器，对message的值进行格式化 -->
+    <p>
+        {{message | capitalize}}
+    </p>
+
+	<!-- 在插值表达式中通过“管道符”调用formatId过滤器，对rawId的值进行格式化 -->
+    <div v-bind:id="rawId | formatId"></div>
+</div>
+<script src="./lib/vue-2.6.12.js"></script>
+<script>
+const vm = new Vue({
+    el: "#app",	// 这个vm示例只会控制第一个匹配的标签
+    data:{
+        message: "hello vue.js"
+    },
+    filters: {
+        // 注意：过滤器函数形参前面的val永远都是管道符前面的那个值
+        capitalize(val){
+            // 字符串的charAt方法接受索引值，表示从字符串中获取索引对应的字符
+            const first = val.charAt(0).toUpperCase()
+            // 字符串的slice可以截取字符串
+            const other = val.slice(1)	
+            // 过滤器中一定要有返回值!!!
+            return first + other
+        }
+    }
+})
+</script>
+```
+
+##### 私有过滤器和全局过滤器
+
+- 私有过滤器
+
+私有过滤器即上面所展示的过滤器，在局部的vue作用域中定义，仅作用域局部的vue区域
+
+- 全局过滤器
+
+全局过滤器则独立于每个vm实例之外，可以利用vue.filter()方法构建
+
+用法示例
+
+```
+Vue.filter('过滤器名',(参数名)=>{
+	return 返回的内容
+})
+```
+
+##### 过滤器注意点
+
+1. 过滤器要定义到filters节点下，本质是一个函数
+2. 在过滤器函数中，一定要有return值
+3. 在过滤器的形参中第一个参数一定是管道符前面待处理的那个值，如果要传参则参数会从形参列表第二个形参开始传递
+4. 如果全局过滤器和私有过滤器名字一致，私有过滤器会覆盖全局过滤器
+5. 过滤器可以连续调用，即将多个过滤器用管道符连接在一起，表示前面处理的结果作为形参传递给下一个过滤器
+
+### 侦听器
+
+#### 什么是watch侦听器
+
+watch侦听器允许开发者监视数据的变化，从而针对数据的变化做特定的操作
+
+> 侦听器本质上是一个函数，要侦听数据的变化，就把数据名改为方法名即可
+>
+> 所有的侦听器都应该被定义到watch节点下
+>
+> 侦听器中第一个参数是新值，第二个参数是旧值
+
+- 用法示例
+
+```javascript
+const vm = new Vue({
+    el: "#app",	// 这个vm示例只会控制第一个匹配的标签
+    data:{
+        username: "hello vue.js"
+    },
+    watch: {
+		username(newVal, oldVal){
+            console.log(newVal, oldVal)
+        }
+	}
+})
+```
+
+#### 侦听器的格式
+
+1. 方法格式的侦听器
+   - 缺点1：无法在刚进入页面的时候自动触发
+   - 缺点2：如果侦听的是一个对象，如果对象中属性发生了变化，不会触发侦听器
+2. 对象格式的侦听器
+   - 好处1：可以通过immediate选项让侦听器自动触发
+   - 好处2：可以通过deep选项让侦听器深度侦听对象中属性的变化
+
+> 深度侦听的概念：如果侦听的是对象格式的数据，那么对象里面属性的变化无法被侦听器侦听到
+
+#### 对象格式的侦听器
+
+```
+const vm = new Vue({
+    el: "#app",	// 这个vm示例只会控制第一个匹配的标签
+    data:{
+        info: {
+        	username: "admin"
+    	}
+    },
+    watch: {
+		info:{
+			// 侦听器的处理函数，一定为handler函数
+            handler(newVal, oldVal){
+            	 console.log(newVal.username, oldVal.username)
+            },
+            immediate:true,	// 表示一进入页面就触发一次
+            // 开启深度侦听，只要对象中任何一个属性发生变化了，都会开启侦听器
+            deep: true	
+        },
+        // 如果要侦听的是对象子属性的变化，还可以采用如下方法，注意必须包裹一层单引号
+        'info.username'(newVal){
+			console.log(newVal)	
+        }
+	}
+})
+```
+
+### 计算属性
+
+- 什么是计算属性
+
+计算属性是指通过一系列运算之后最终得到的一个属性值
+
+这个动态计算出来的属性值可以被模板结构或methods方法使用
+
+- 特点
+
+1. 计算属性在定义的时候要被定义为方法
+2. 在使用计算属性的时候，当普通的属性使用即可
+
+- 好处
+
+1. 实现了代码的复用
+2. 只要计算属性中依赖的数据源变化了，则计算属性会自动重新求值
+
+- 用法示例
+
+```javascript
+const vm = new Vue({
+    el: "#app",	// 这个vm示例只会控制第一个匹配的标签
+    data:{
+        r:0,
+		g:0,
+		b:0
+    },
+	computed: {
+        rgb(){return `rgb(${this.r},${this.g},${this.b})`}
+    },
+    methods: {
+        show(){
+            console.log(this.rgb)
+        }
+    }
+})
+```
+
+### vue-cli
+
+#### 单页面应用程序
+
+单页面应用程序（single page application）简称SPA，指的是一个web网站中只有唯一的一个HTML页面，所有的功能与交互都在这唯一的一个页面内完成
+
+#### 什么是vue-cli
+
+vue-cli是vue.js开发的标准工具，它简化了程序员基于webpack创建工程化的vue项目的过程
+
+vue-cli使得程序员可以专注在撰写应用上，而不必花好几天去纠结webpack配置的问题
+
+中文官网：https://cli.vuejs.org/zh/
+
+#### vue-cli的安装和使用
+
+vue-cli是npm上的一个全局包，使用如下命令可以方便的把它安装到自己的电脑上
+
+```
+npm i -g @vue/cli
+```
+
+> 使用`vue -V`命令可以检测是否成功安装
+
+#### 基于vue-cli快速生成工程化的vue项目
+
+在需要创建工程的目录下输入如下命令创建工程
+
+```
+vue create 项目名称
+```
+
+之后会弹出选择界面，如图所示
+
+![image-20220408212130903](C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\image-20220408212130903.png)
+
+表示需要程序员选择一个预设，使用上下箭头切换，其中前两个预设只要选择后回车就会立即创建项目，第三项表示手动选择要安装的功能
+
+> 实际开发中建议选择第三项，定制功能
+
+选择第三项后会出现如下界面
+
+![image-20220408212343245](C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\image-20220408212343245.png)
+
+在这个界面中按空格选择，按enter继续下一步
+
+- babel为解决高级语法兼容性的中间件，一定要装
+
+- TypeScript
+- Progressive Web App Support 渐进式web框架支持
+- Router 路由
+- Vuex
+- CSS Pre-processors CSS预处理器，即less
+- Linter / Formatter 用来约束团队代码风格，初学者尽量别选，否则经常报错
+- Unit Testing 对组件进行单元测试
+- E2E Testing 
+
+> 初学者建议只装Babel、CSS Pre-processors
+
+确定后需要选择vue的版本，选择之后会出现如下页面
+
+![image-20220408213132150](C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\image-20220408213132150.png)
+
+这个界面是让你选择css预处理器的，目前选择less即可，然后出现如下界面
+
+![image-20220408213217307](C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\image-20220408213217307.png)
+
+该界面询问第三方插件的创建方式
+
+默认选择第一项（独立配置），如果选择第二项，package.json会很杂很乱，因此一定要选择第一项
+
+最后会跳出这最后一个框
+
+![image-20220408213335976](C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\image-20220408213335976.png)
+
+这个页面询问是否将这个预设保存，视情况选择即可
+
+进行完如上步骤后，vue-cli就正式创建了，并自动下载需要的包
+
+> 注意：如果窗口意外被冻结，可以使用ctrl+c进行解冻
+
+项目创建完毕后将出现如下页面
+
+![image-20220408213704590](C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\image-20220408213704590.png)
+
+其中`test`为自定义的项目名称，`npm run serve`就是自动打包js文件的快捷键
+
+#### vue中项目的构成
+
+在src目录下有四个文件/文件夹
+
+- assets文件夹：该文件夹中存放在项目中用到的静态资源文件，例如css样式表，图片资源
+- components文件夹：程序员封装的、可复用的组件都要放到components目录下
+- main.js文件是项目的入口文件，整个项目的运行要先执行main.js文件
+- App.vue是项目的根组件
+
+> render函数中渲染的是哪一个组件，哪一个组件就叫做根组件
+
+在public目录下有index.html
+
+#### vue项目的运行流程
+
+在工程化的项目中，vue要做的事情很单纯：通过main.js把App.vue渲染到index.html的指定区域汇总
+
+其中
+
+1. App.vue用来编写带渲染的模板结构
+2. index.html中需要预留一个el区域
+3. main.js把App.vue渲染到了index.html所预留的区域中
+
+#### 组件的基本使用
+
+```vue
+// 导入vue包，得到Vue构造函数
+import Vue from 'vue'
+// 导入App.vue根组件，将来要把App.vue中的模板结构渲染到HTML页面中
+import App from './App.vue'
+
+// 创建Vue的实例对象
+new Vue({
+	// 把render函数指定的组件渲染到HTML页面中
+	render: h =>h(App)
+}).$mount('#app')
+```
+
+> vue中render渲染方法本质上是直接将组件替换掉所选择的html上的标签
+
+> vue实例具有$mount()方法，其作用和el属性完全一样，即el与%mount()方法可以互相代替
+
+> vue中很少使用html文件，而是直接使用工程化文件进行渲染
+
+### Vue组件
+
+#### 组件化开发
+
+组件化开发指的是：根据封装的思想，把页面上可重用的UI结构封装为组件，从而方便项目的开发和维护
+
+#### vue中的组件化开发
+
+vue是一个支持组件化开发的前端框架
+
+vue中规定：组件的后缀名是`.vue`
+
+#### vue组件中的三个组成部分
+
+每个.vue组件都由3部分构成，分别是：
+
+- template->组件的模板结构
+- script->组件的javascript行为
+- style->组件的样式
+
+> 三个组成部分尽量按照template、script、style的顺序依次存放
+
+下方是一个完整的.vue文件的示例，请注意观察其中注释的讲解
+
+```html
+// 在template中，只能由一个div标签作为根节点，即不能同时有两个div在最外层，该标签也被称为唯一根节点
+<template>
+	<div class="test-box">
+        <h3>
+            这是用户自定义的Test.vue --- {{ username }}
+        </h3>
+        <button @click="changeName">
+            修改用户名
+        </button>
+    </div>
+</template>
+<script>
+// 默认导出，注意，这是一个固定写法!!!
+export default {
+    /* 
+    data数据源
+    注意：.vue组件中的data不能像之前一样指向对象
+    组件中的data必须是一个函数，其返回值为一个数据对象，页面的数据应该在该返回值对象中定义
+    */
+    data() {
+        return {
+            username: 'admin'
+        }
+    },
+    // 在这里定义当前组件中的方法
+    methods: {
+        changeName() {
+            // 此处的this为组件的实例而不是Vue对象的实例，此处并没有定义Vue对象
+            this.username = "测试用户名"
+        }
+    },
+    watch() {
+		// 在此处书写当前组件中的侦听器
+    },
+    computed() {
+		// 在此处书写当前组件中的计算属性
+    },
+    filters() {
+		// 在此处书写当前组件中的过滤器
+    }
+}
+</script>
+
+
+// 在style标签中书写样式，其中lang="less"表示启用了less语法，如果不写则默认为css语法
+<style lang="less">
+    .test-box {
+		margin: 0 auto;
+        background-color: pink
+    }
+</style>
 ```
 
