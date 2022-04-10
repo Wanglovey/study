@@ -4,7 +4,7 @@
 
 ### HTML
 
-HTML即超文本标记语言。它是一种标记语言，而非编程语言，不能使用逻辑运算。	HTML通过标签将网络上的文档格式进行统一，使分散网络资源链接为一个逻辑整体，	即HTML使用标签来描述网页内容
+HTML即超文本标记语言。它是一种标记语言，而非编程语言，不能使用逻辑运算。	HTML通过标签将网络上的文档格式进行统一，使分散网络资源链接为一个逻辑整体，即HTML使用标签来描述网页内容
 
 ### 超文本
 
@@ -34,7 +34,7 @@ HTML即超文本标记语言。它是一种标记语言，而非编程语言，�
 
 #### 行内元素
 
-行内元素在浏览器中不会单独占一行，相邻的行内元素会排列在同一行，直到一行	排不下才会换行
+行内元素在浏览器中不会单独占一行，相邻的行内元素会排列在同一行，直到一行排不下才会换行
 
 行内元素的宽度随元素的内容而变化，对行内元素设置width和height无效
 
@@ -139,7 +139,7 @@ HTML5由W3C和WHAT组织机构共同研发出来的，于2014年正式发布，�
 
 #### Dcloud HBuilder
 
-拥有完整的语法提示和代码输入法，编写代码速度更加快捷，默认添加emmet语法	插件。轻量级开发软件，无需安装
+拥有完整的语法提示和代码输入法，编写代码速度更加快捷，默认添加emmet语法插件。轻量级开发软件，无需安装
 
 #### Sublime Text 3
 
@@ -218,7 +218,7 @@ SEO三大标签即对SEO最有用的三种标签
   - 用来给标签取一个唯一的名称。id名称在一个网页必须是唯一的。
 
 - class
-  - 用来给标签取一个类名。	
+  - 用来给标签取一个类名。
 
 - style
   - 用来设置该标签的行内样式。
@@ -245,7 +245,7 @@ SEO三大标签即对SEO最有用的三种标签
 dom.getAttribute("自定义属性名")
 ```
 
-2. H5新增（IE11以上支持）
+2. H5新增
 
 ```
 dom.dataset.* 或 dom.dataset[‘*’]
@@ -269,9 +269,9 @@ caption	标题
 thead	表头
 tbody	表体
 tfoot	表尾
-tr		行
-th		标题列
-td		普通列
+tr	行
+th	标题列
+td	普通列
 ```
 
 ### 表格属性
@@ -279,12 +279,12 @@ td		普通列
 > 表格属性大部分可由css代替，因此下方仅介绍目前较常用的表格属性
 
 ```html
-width		表格宽度，默认单位是像素
-align		表格对齐方式(left(默认)/center/right)
-cellpadding		单元格文本与边框的距离
-cellspacing		单元格边框间距
-rowspan=跨行数		跨行
-colspan=跨列数		跨列
+width	表格宽度，默认单位是像素
+align	表格对齐方式(left(默认)/center/right)
+cellpadding	单元格文本与边框的距离
+cellspacing	单元格边框间距
+rowspan=跨行数跨行
+colspan=跨列数跨列
 ```
 
 >  注意：margin属性对表格的css或者`display:table-cell`修饰的标签无效
@@ -303,10 +303,10 @@ colspan=跨列数		跨列
         </tr>
     </thead>
     <tbody>
-    	...
+    ...
     </tbody>
     <tfoot>
-    	...
+    ...
     </tfoot>
 </table>
 ```
@@ -329,11 +329,11 @@ method	前端提交数据到后端的方法，值为get/post，get为默认值
 ### 表单属性
 
 ```
-formaction		修改action数据提交的地方
-formenctype		修改表单请求的类型
-formmethod		修改数据提交的方法
-form		设置表单元素属于哪个表单
-novalidate		不验证
+formaction	修改action数据提交的地方
+formenctype	修改表单请求的类型
+formmethod	修改数据提交的方法
+form	设置表单元素属于哪个表单
+novalidate	不验证
 ```
 
 > 上方的属性为表单元素的属性，而非form标签的属性
@@ -347,22 +347,22 @@ input类主要用来输入，选择或发出指令，type属性是其关键属�
 ##### input类的常用属性
 
 ```html
-placeholder		提示
-name			专有名称，必填项，且在同一个表单中必须唯一存在
-minlength		最少输入的字符个数
-maxlength		最多输入的字符个数
-disabled		使input失效
-readonly		是input为只读属性
-value			保存input标签的值，也可以利用此属性为input标签设置默认值
+placeholder	提示
+name	专有名称，必填项，且在同一个表单中必须唯一存在
+minlength	最少输入的字符个数
+maxlength	最多输入的字符个数
+disabled	使input失效
+readonly	是input为只读属性
+value	保存input标签的值，也可以利用此属性为input标签设置默认值
 
 以下属性为HTML5新增属性
 autocomplete	表单的默认填充行为（html5新属性）
-				可选值：on/off	启用/禁用自动完成行为，默认状态为启用
-autofocus		自动获焦
-step			步长
-multiple		多选
-pattern			正则匹配，我也不会用	
-required		标记此选项必须输入，不能为空
+可选值：on/off	启用/禁用自动完成行为，默认状态为启用
+autofocus	自动获焦
+step	步长
+multiple	多选
+pattern	正则匹配，我也不会用
+required	标记此选项必须输入，不能为空
 ```
 
 ##### type属性常用值
@@ -439,12 +439,12 @@ required		标记此选项必须输入，不能为空
 ```
 color	拾色器
 email	输入邮箱
-tel		输入电话号码
-url		输入网址
+tel	输入电话号码
+url	输入网址
 number	数字
 range	范围
 search	搜索
-date		选择日期
+date	选择日期
 datetime	选择日期时间
 datetime-local	本地日期时间
 year	选择年份
@@ -467,7 +467,7 @@ placeholder	文本域的提示信息
 minlength	最小长度
 maxlength	最大长度
 required	表示必须输入此项
-value		文本域中的值
+value	文本域中的值
 ```
 
 #### select
@@ -479,7 +479,7 @@ value		文本域中的值
 
 ```html
 multiple	表示此select类可以多选，这时的下拉列表框变成了列表框
-size		最多同时显示的选项数
+size	最多同时显示的选项数
 ```
 
 - 样例
@@ -487,9 +487,9 @@ size		最多同时显示的选项数
 
 ```html
 <select name="num">
-  	<option value="1">1</option>
-  	<option value="2">2</option>
-  	<option value="3">3</option>
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
 </select>
 ```
 
@@ -499,6 +499,26 @@ size		最多同时显示的选项数
 
 button可以单独使用，不一定要写在form元素中，但如果写在了form中，则该按钮具有提交功能
 
+## 列表
+
+#### 什么是列表
+
+不是描述性的文本的任何内容都可以认为是列表。比如：菜单、商品列表等。
+
+#### 列表类型
+
+列表具有三种类型
+
+- 无序(ul)
+- 有序(ol)
+- 自定义列表(dl)。
+
+ul和ol的列表项都是用li表示的，而dl是由一个dt和一个或多个dd组成的。
+
+dl一般用来设定一个定义，比如名词解释等。
+
+dt（标题）和dd（描述）是用来对dt的内容进行解释并说明的
+
 ## iframe框架集
 
 iframe即框架集，可以用来将多个网页文件组合成一个文件
@@ -507,13 +527,13 @@ iframe即框架集，可以用来将多个网页文件组合成一个文件
 
 ```
 name	框架名
-src		引入的外部html文件
+src	引入的外部html文件
 scrolling	滚动条(yes/no/auto)
-width		宽度(%/px)
-height		高度(%/px)
-frameborder		是否有边框(1/0)
+width	宽度(%/px)
+height	高度(%/px)
+frameborder	是否有边框(1/0)
 marginheight	框架离顶部和底端的距离(%/px)
-marginwidth		框架离左右的距离(%/px)
+marginwidth	框架离左右的距离(%/px)
 ```
 
 > 注意：在实际开发，尽量减少`iframe`的使用，因为它破坏了前进和后退功能，且不利于`SEO`
@@ -524,21 +544,21 @@ marginwidth		框架离左右的距离(%/px)
 文本格式化标签是用来美化文本的一类
 
 ```html
-<b>			粗体字
+<b>	粗体字
 <strong>	粗体字，与b不同之处仅在于strong表示强调，主要用于SEO引擎优化时提取关键字
-<i>			斜体字
-<em>		斜体字，同时也表示强调，强调作用见上
-<pre>		定义预格式化的文本，被包含在pre标签元素中的文本会保留空格和换行符，文本也会呈现为等宽字体
-<small>		小型文本
-<sub>		定义下标文本
-<sup>		定义上标文本
+<i>	斜体字
+<em>	斜体字，同时也表示强调，强调作用见上
+<pre>	定义预格式化的文本，被包含在pre标签元素中的文本会保留空格和换行符，文本也会呈现为等宽字体
+<small>	小型文本
+<sub>	定义下标文本
+<sup>	定义上标文本
 ```
 
 ## 转义字符
 
 ```
-&lt		小于号
-&gt		大于号
+&lt	小于号
+&gt	大于号
 &amp	&号
 &nbsp	空格
 &copy	版权符号 
@@ -550,11 +570,11 @@ marginwidth		框架离左右的距离(%/px)
 
 ```html
 header	页首
-nav		导航栏
+nav	导航栏
 aside	侧边栏
 main	主体
-section		区块
-article		文章
+section	区块
+article	文章
 footer	页尾
 ```
 
@@ -563,16 +583,16 @@ footer	页尾
 > 下方的语义化标签为HTML5新增标签
 
 ```html
-mark		高亮显示(行级)
-details		描述标签，一般用于名词解释或用于封装一个区块等
-summary		摘要标签，需要在details标签中才能使用
-meter		能够度量给定范围内的数据比例，类似进度条，但不应作为进度条使用
-			属性：value/min/max
+mark	高亮显示(行级)
+details	描述标签，一般用于名词解释或用于封装一个区块等
+summary	摘要标签，需要在details标签中才能使用
+meter	能够度量给定范围内的数据比例，类似进度条，但不应作为进度条使用
+属性：value/min/max
 progress	进度条标签
-			属性：value/min/max
-dialog		在网页中央显示一个对话框或窗口，兼容性较差
-			属性：open
-figure		用于对元素进行组合（一般用来组合一张图的标题、图片和图片描述等）
+属性：value/min/max
+dialog	在网页中央显示一个对话框或窗口，兼容性较差
+属性：open
+figure	用于对元素进行组合（一般用来组合一张图的标题、图片和图片描述等）
 ```
 
 ## 多媒体标签
@@ -581,8 +601,6 @@ figure		用于对元素进行组合（一般用来组合一张图的标题、图
 
 ### audio
 
-播放音乐或音频。IE9以下的版本不支持。
-
 - 支持的格式
   - `.mp3/.ogg/.wav`
 
@@ -590,17 +608,15 @@ figure		用于对元素进行组合（一般用来组合一张图的标题、图
 
 
 ```
-src		文件路径
+src	文件路径
 autoplay	自动播放
 loop	循环
 controls	控制条
 muted	静音
-preload		预加载（当使用autoplay时，preload自动失效）
+preload	预加载（当使用autoplay时，preload自动失效）
 ```
 
 ### video
-
-加载视频。IE9以下的版本不支持。
 
 - 支持的格式
   - `.mp4/.ogg/.webm`
@@ -609,12 +625,12 @@ preload		预加载（当使用autoplay时，preload自动失效）
 
 
 ```
-src		文件路径
+src	文件路径
 autoplay	自动播放
 loop	循环
 controls	控制条
 muted	静音
-preload		预加载（当使用autoplay时，preload自动失效）
+preload	预加载（当使用autoplay时，preload自动失效）
 width	宽度
 height	高度
 poster	海报
@@ -628,7 +644,7 @@ poster	海报
 
 
 ```
-src		文件路径
+src	文件路径
 width	宽度
 height	高度
 type	类型
@@ -647,34 +663,34 @@ type	类型
 
 - `contentEditable`
 
-​		将标签转换为可编辑状态。可用于所有标签。
+将标签转换为可编辑状态。可用于所有标签。
 
-​		属性值：true/false。
+属性值：true/false。
 
 - hidden
 
 
-​		对元素进行隐藏。一般用来传值或当某个条件成立，执行内容显示。默认值为hidden。
+对元素进行隐藏。一般用来传值或当某个条件成立，执行内容显示。默认值为hidden。
 
 - data-*
 
 
-​		自定义属性，一般用于传值。
+自定义属性，一般用于传值。
 
 - multiple
 
 
-​		规定输入域中可选择多个内容。用于表单元素中，如file/select。
+规定输入域中可选择多个内容。用于表单元素中，如file/select。
 
 - required
 
 
-​		约束表单元互在提交前必须输入值。用于表单组件中，需要结合提交按钮使用。
+约束表单元互在提交前必须输入值。用于表单组件中，需要结合提交按钮使用。
 
 - pattern
 
 
-​		用于验证输入字段的模式。用于表单组件中，需要结合提交按钮使用
+用于验证输入字段的模式。用于表单组件中，需要结合提交按钮使用
 
 ## web字体引入
 
@@ -708,7 +724,7 @@ web字体引入指开发者在开发时为网页引入外部字体。
 
    ```html
    <script language="javascript" type="text/javascript">
-   	脚本代码
+   脚本代码
    </script>
    ```
 
@@ -716,7 +732,7 @@ web字体引入指开发者在开发时为网页引入外部字体。
 
    ```
    <style type="text/css">
-   	样式设置
+   样式设置
    </style>
    ```
 
@@ -781,11 +797,11 @@ span、img、a、label、input、abbr（缩写）、button、em等格式化标�
 
 
 ```
-<a>		超链接，可以用title属性显示提示内容
-<p>		文章段落
+<a>	超链接，可以用title属性显示提示内容
+<p>	文章段落
 <hx>	文章标题
 <strong>、<em>	表示强调，em斜体，strong粗体
-<q>			引用，浏览器会对q标签引用内容自动添加双引号
+<q>	引用，浏览器会对q标签引用内容自动添加双引号
 <address>	为网页加入地址信息或者联系方式等
 <ul>	无序列表
 <ol>	有序列表
@@ -838,9 +854,9 @@ index.css	首页样式
 
 ```
 产品目录	xxxxx(产品名)pro
-图片文件目录		images/img/pic
-视频		video
-音频		music
+图片文件目录	images/img/pic
+视频	video
+音频	music
 文件工程	file
 ```
 
@@ -848,7 +864,7 @@ index.css	首页样式
 
 
 ```
-首页		index.html（必须是这个）
+首页	index.html（必须是这个）
 订单页 	order.html
 公司介绍 	about.html
 新闻列表 	news.html
@@ -923,7 +939,7 @@ CSS即层叠样式表，是用来美化网页的工具。
 
 ```
 选择器 {
-	属性: 属性值;
+属性: 属性值;
 }
 ```
 
@@ -933,7 +949,7 @@ CSS即层叠样式表，是用来美化网页的工具。
 
 - 特性
 
-​	子元素有默认继承父元素样式的特性
+子元素有默认继承父元素样式的特性
 
 > 注意：可以通过调试工具判断样式是否可以继承
 
@@ -979,19 +995,19 @@ CSS的四种使用方式为行间样式、内部样式、外部样式、导入�
 
 1. 行间样式
 
-​	行间样式即直接在标签上书写样式。
+行间样式即直接在标签上书写样式。
 
 2. 内部样式
 
-​	内部样式即在文件内部的<style>标签中书写样式。
+内部样式即在文件内部的<style>标签中书写样式。
 
 3. 外部样式
 
-​	外部样式即用link标签引入CSS文件
+外部样式即用link标签引入CSS文件
 
 4. 导入外部样式
 
-​	导入外部样式即在style标签中用import导入CSS文件
+导入外部样式即在style标签中用import导入CSS文件
 
 #### 四种CSS使用方式的区别
 
@@ -1041,9 +1057,9 @@ CSS的四种使用方式为行间样式、内部样式、外部样式、导入�
 
 #### 伪元素注意事项
 
-`:before、:after、:first-letter、:first-line` 	前面可以是1个冒号也可以是双冒号
+`:before、:after、:first-letter、:first-line` 前面可以是1个冒号也可以是双冒号
 
-`::selection、::placeholder、::backdrop` :			前面只能是双冒号
+`::selection、::placeholder、::backdrop` :	前面只能是双冒号
 
 ## CSS选择器
 
@@ -1053,19 +1069,19 @@ CSS的四种使用方式为行间样式、内部样式、外部样式、导入�
 
 - 定义
 
-​	通配符选择器用于匹配html中或指定标签中所有元素
+通配符选择器用于匹配html中或指定标签中所有元素
 
 - 样例
 
 ```
 * {} 
 或 
-div *{}	// 匹配div下面的所有元素
+div *{}// 匹配div下面的所有元素
 ```
 
 - 权重
 
-​	0
+0
 
 > 注意：*选择器的性能极差，因为它要匹配所有元素，所以在开发时不建议使用
 
@@ -1073,7 +1089,7 @@ div *{}	// 匹配div下面的所有元素
 
 - 定义
 
-​	元素选择器用于选择指定类型的HTML元素，如div、ul、li等
+元素选择器用于选择指定类型的HTML元素，如div、ul、li等
 
 - 样例
 
@@ -1083,13 +1099,13 @@ div {}
 
 - 权重
 
-​	10
+10
 
 #### 类选择器
 
 - 定义
 
-​	类选择器用于选择指定类名的标签
+类选择器用于选择指定类名的标签
 
 - 样例
 
@@ -1097,7 +1113,7 @@ div {}
 
 - 权重
 
-​	100
+100
 
 #### ID选择器
 
@@ -1115,7 +1131,7 @@ div {}
 
 - 定义
 
-​	将具有相同样式的元素分组在一起，每个选择器之间使用逗号“,”隔开
+将具有相同样式的元素分组在一起，每个选择器之间使用逗号“,”隔开
 
 - 样例
 
@@ -1271,7 +1287,7 @@ a[title*="site"] {}
 
 ```
 :first或first()  第一个元素
-:last或last()	最后一个元素
+:last或last()最后一个元素
 :not(selector)  除selector之外的元素
 :even  偶数元素
 :odd	奇数元素
@@ -1293,7 +1309,7 @@ a[title*="site"] {}
 #### 可见性过滤选择器
 
 ```
-:hidden		选择display:none或隐藏文本域(hidden)的元素
+:hidden	选择display:none或隐藏文本域(hidden)的元素
 :visible	选择display:block的元素
 ```
 
@@ -1327,14 +1343,14 @@ a:active{color:blue;} /*鼠标点中激活链接那一下前景色为蓝色*/
 
 ```
 :first-child	选择父元素的第一个子元素
-:last-child		选择父元素的最后一个子元素
-:nth-child(n)	选择父元素的第n个子元素
-:nth-last-child(n)	选择父元素的倒数第n个子元素
-:nth-of-type(n)		选择父元素内具有指定类型的第n个子元素
-:nth-last-of-type(n)	选择父元素内具有指定类型的倒数第n个子元素
+:last-child	选择父元素的最后一个子元素
+:nth-child(n)选择父元素的第n个子元素
+:nth-last-child(n)选择父元素的倒数第n个子元素
+:nth-of-type(n)选择父元素内具有指定类型的第n个子元素
+:nth-last-of-type(n)选择父元素内具有指定类型的倒数第n个子元素
 :only-child
 :only-of-type
-:empty		选择没有子元素的元素，且该元素不包含任何节点
+:empty	选择没有子元素的元素，且该元素不包含任何节点
 ```
 
 ### 否定伪类和目标伪类选择器（仅需了解）
@@ -1369,11 +1385,11 @@ font-family	字体
 font-style	文字样式(normal/italic/oblique)
 font-weight	文字加粗(normal/bold/bolder/lighter/100-900)
 line-height	行高(px/数字/em等)
-color		文字的颜色(颜色的单词/rgb()/16进制)
+color	文字的颜色(颜色的单词/rgb()/16进制)
 text-decoration	文字修饰(none/underline/overline/line-through)
-text-align		文本对齐方式(left/right/center)
+text-align	文本对齐方式(left/right/center)
 text-transform	字母大小写(capitalize/uppercase/lowercase/none)
-text-indent		文本缩进(px/em/%/pt等)
+text-indent	文本缩进(px/em/%/pt等)
 ```
 
 - font复合属性
@@ -1390,1116 +1406,1146 @@ font:font-style font-variant font-weight font-size/line-height font-family;
 
 ## 背景
 
-1、CSS背景
+### CSS背景
 
-​	1）background-color		背景色(transparent/color)
+```
+background-color	背景色(transparent/color)
+background-image	背景图(none/url)
+background-repeat	背景图像铺排方式(repeat/no-repeat/repeat-x/repeat-y)
+background-position	设置对象的背景图像位置
+属性值
+({x-number|top|center|bottom},{y-number|left|center|right})
+background-attachment	背景图像滚动位置(scroll/fixed)
 
-​	2）background-image	背景图(none/url)
+背景的复合写法
+background: color image repeat attachment position
+```
 
-​	3）background-repeat	背景图像铺排方式(repeat/no-repeat/repeat-x/repeat-y)
 
-​	4）background-position	设置对象的背景图像位置
 
+### CSS3背景
+
+- 多重背景
+
+
+```
+background: 背景色1 背景图片1 平铺方式1 位置1,背景色2 背景图片2 平铺方式2 位置2,...
+```
+
+- 设定背景图像的尺寸
+
+
+```
+background-size: 固定长度|百分比值|cover|contain;
+```
+
+- 指定背景图像的位置区域
+
+
+```
+background-origin: padding-box|border-box|content-box;
+```
+
+- 设定背景的绘制区域
+
+
+```
+background-clip: border-box|padding-box|content-box;
+```
+
+- 渐变背景
+
+
+```
+background-image: linear-gradient(渐变方向,颜色1 [颜色1占比],颜色2 [颜色2占比],...); | radial-gradient(shape size at position, start-color, ..., last-color);
+```
+
+> 第一个渐变为线性渐变，第二个渐变为径向渐变
+>
+> 渐变方向有：
+>
+> 1. to left | to right | to top | to bottom
+> 2. to bottom left | to top left | ...
+> 3. 角度，即 `数值deg`，正上方为0deg位置，角度方向为顺时针方向
+>
+> 颜色既可以使用#ffffff的形式，也可以使用rgb()和rgba()函数
+
+## display属性
+
+display属性用于设置元素的显示方式
+
+- 属性值
+
+
+```
+none	不显示元素
+block	块显示，在元素前后设置换行符。
+目的：将行级标签转换为块级标签（使得行级标签能像块级标签一样设置宽高）
+inline	行内显示，将块级标签转换为行级标签。
+inline-block	将块级或行级标签转换为行内块级标签。
+```
+
+## table样式
+
+> table样式现在一般不用来布局，而是用来格式化数据。
+
+- 属性
+
+```
+width	宽度
+height	高度
+border-collapse:collapse; 单线边框
+border	边框线
+```
+
+- td,tr属性
+
+```css
+width	宽度
+height	高度
+border	边框线
+text-align	文本左右对齐(left(默认)/center/right)
+vertical-align	文本垂直对齐(top/middle(默认)/bottom/baseline)
+```
+
+
+
+### 列表样式
+
+```
+list-style-image	用图像表示标识
+list-style-position	列表标识的位置
 属性值：
-
-({x-number | top | center | bottom }， {y-number | left | center | right })
-
-​	5）background-attachment	背景图像滚动位置(scroll/fixed)
-
-​	6）background		设置背景的复合写法
-
-​		background: color image repeat attachment position
-
-### 2、CSS3背景
-
-​	1）多重背景
-
-​		background: 背景色 背景图片 平铺方式 位置,背景色 背景图片 平铺方式 位置
-
-​	2）background-size：设定背景图像的尺寸。
-
-​		background-size: 固定长度|百分比值|cover|contain;
-
-​	3）background-origin：指定背景图像的位置区域。
-
-​		background-origin: padding-box|border-box|content-box;
-
-​	4）background-clip：设定背景的绘制区域。
-
-​		background-clip: border-box|padding-box|content-box;
-
-​	5）渐变背景
-
-​		background-image: 线性渐变｜径向渐变
-
-## 1.10. display属性
-
-display属性：用来设置元素的显示方式。
-
-​	属性值：
-
-​		none	不显示元素
-
-​		block	块显示，在元素前后设置换行符。
-
-目的：将行级标签转换为块级标签（因为行级标签不识别宽高，而块级标签	识别，转换后，行级标签也可以设置宽高了）
-
-​		inline	行内显示，将块级标签转换为行级标签。
-
-​		inline-block	将块级或行级标签转换为行内块级标签。
-
-## 1.11. table样式
-
-​	table一般不用来布局，主要用来格式化数据。
-
-​	属性：
-
-​		width	宽度
-
-​		height	高度
-
-​		border-collapse:collapse; 单线边框
-
-​		border	边框线
-
-​	td，tr属性：
-
-​		width	宽度
-
-​		height	高度
-
-​		border	边框线
-
-​		text-align	文本左右对齐(left(默认)/center/right)
-
-​		vertical-align	文本垂直对齐(top/middle(默认)/bottom/baseline)
-
-## 1.12. 列表样式
-
-1、不是描述性的文本的任何内容都可以认为是列表。比如：菜单、商品列表等。
-
-2、列表类型
-
-​	无序(ul)、有序(ol)和自定义列表(dl)。
-
-​	ul和ol的列表项都是用li表示的，而dl是由一个dt和一个或多个dd组成的。
-
-​	dl一般用来设定一个定义，比如名词解释等。dt：标题,dd：描述，用来对dt的内容进行解释并说明的。
-
-3、样式(用来修改标识类型)
-
-​	list-style-image		用图像表示标识
-
-​	list-style-position	列表标识的位置
-
-​				属性值：
-
-inside
-
-outside	默认属性
-
-​	list-style-type		标识类型
-
-​					属性值：
-
-​		a)无序
-
-​			disc(默认)/circle/square
-
-​		b)有序
-
-​			decimal		默认
-
-decimal-leading-zero
-
-lower-roman
-
-upper-roman
-
-lower-alpha
-
-upper-alpha
-
-lower-greek
-
-lower-latin
-
-upper-latin
-
-样式简写：
-
-​	list-style:list-style-image list-style-position list-style-type;
-
-注意：list-style的值可以按任意顺序列出，而且可以任意省略，只要提供一个值，其它		的都自动默认。
-
-## 1.13. 隐藏
-
-### **1.13.1.** ***\*占位隐藏\****
+	inside
+	outside	默认属性
+list-style-type	标识类型
+属性值：
+无序：disc(默认)/circle/square
+有序：
+	decimal	默认
+                            decimal-leading-zero
+                            lower-roman
+                            upper-roman
+                            lower-alpha
+                            upper-alpha
+                            lower-greek
+                            lower-latin
+                            upper-latin
+```
+
+- 样式简写
+
+
+	list-style:list-style-image list-style-position list-style-type;
+
+> 注意：list-style的值可以按任意顺序列出，而且可以任意省略，只要提供其中一个值，其它的都自动默认。
+
+## 隐藏
+
+### 占位隐藏
 
 visibility:hide
 
-### **1.13.2.** ***\*不占位隐藏\****
+### 不占位隐藏
 
 display:none
 
-### **1.13.3.** ***\*显示隐藏元素的常用写法\****
+### 显示隐藏元素的常用写法
 
 利用父节点的伪类来实现显示隐藏元素
 
-html：
-
+```html
+<style>
+    .box1:hover .box1_2{
+        display:block;
+    }
+</style>
 <div class=”box1”>
-
-<div>显示隐藏元素</div>
-
-<div in=”box1_2 style=”display:none”>隐藏元素</div>
-
+<div>显示元素</div>
+<div class=”box1_2“ style=”display:none”>这是被隐藏的元素</div>
 </div>
+```
 
-样式：
+## 浮动
 
-.box:hover box1_2{
+### 浮动基础
 
-display:block;
+- 什么是浮动
 
-}
+浮动指的是让块级标签不独占一行
 
-## 1.14. 浮动
+- 浮动目的
 
-### **1.14.1.** ***\*浮动\*******\*介绍及其应用\****
+把块级标签元素可以排在一行上
 
-​	浮动就是让块级标签不独占一行。
+- 原理
 
-目的（使用场景）：把块级标签元素可以排在一行上。
-
-### **1.14.2.** ***\*浮动的原理\*******\*、\*******\*作用、特点和注意点\****
-
-1、原理
 
 浮动的原理就是让元素脱离文档流，不占用标准流
 
-2、作用
+- 浮动的作用
+
 
 早期作用：图文环绕
 
 现在作用：网页布局
 
-3、特点
+- 浮动的特点
 
-1.浮动元素会脱离标准流（简称：脱标），在标准流中不占位置
 
-2.浮动元素比标准流高半个级别，可以覆盖标准流中的元素
+1. 浮动元素会脱离标准流（简称：脱标），在标准流中不占位置
 
-3.下一个浮动元素会在上一个浮动元素后面左右浮动
+2. 浮动元素比标准流高半个级别，可以覆盖标准流中的元素
 
-4.浮动元素有特殊的显示效果：一行可以显示多个且可以设置宽高
+3. 下一个浮动元素会在上一个浮动元素后面左右浮动
 
-4、注意点
+4. 浮动元素有特殊的显示效果：一行可以显示多个且可以设置宽高
 
-浮动的元素不能通过text-align:center和margin:0 auto设置居中
+- 注意点
 
-### **1.14.3.** ***\*float的属性值\****
 
-​	left:左浮动
+浮动的元素不能通过`text-align:center`和`margin:0 auto`设置居中
 
-​	right:右浮动
+- 浮动的语法
 
-​	none:默认值，不浮动
+```css
+选择器 {
+	float: left | right | none;
+}
+```
 
-浮动后，后面的元素不管是块级还是行级元素，不会显示在下一行。
+> left	   左浮动
+>
+> right	右浮动
+>
+> none	默认值，不浮动
+>
 
-### **1.14.4.** ***\*清除浮动\*******\*（\*******\*重点\*******\*）\****
+> 浮动后，后面的元素不管是块级还是行级元素，不会显示在下一行。
+>
 
-​	1、目的：让后面的元素自动掉到下一行。
+### 清除浮动
 
-​	2、方法：
+- 清除浮动的目的
 
-​		1）添加空标签，并设置样式：clear:both;
+让后面的元素自动掉到下一行。
 
-​			clear:left;  清除左浮动
+- 方法
 
-​			clear:right; 清除右浮动
 
-​			clear:both;  清除左右浮动
+1. 添加空标签，并根据需要设置如下样式
 
-​			clear:none;  左右浮动都不清除
+```css
+clear:left;  清除左浮动
+clear:right; 清除右浮动
+clear:both;  清除左右浮动
+clear:none;  左右浮动都不清除
+```
 
-​		2）在要清除浮动的父级添加样式：overflow:hidden;
+2. 在浮动节点的父节点添加样式如下样式
 
-​			overflow:hidden;  超出部分隐藏，也可以用来实现清除浮动。
+```css
+overflow:hidden;  作用为使超出部分隐藏，也可以用来实现清除浮动。
+```
 
-​		3）在要清除浮动的父级添加伪元素，并设定样式：
+3. 在浮动元素的父级添加伪元素，并设定如下样式
 
-​			父元素:after{
+```css
+父元素:after{
+    content:"";
+    display: block;
+    clear:both;
+}
+```
 
-​				content:"";
+> 在实际项目开发中，我们优先使用第2、3种方案，不推荐第一种方案
+>
 
-​				display: block;
+## 盒子模型
 
-​				clear:both;
+### 基础知识
 
-​			}
+1. 每个元素都是一个盒子，一个盒子由一下四部分组成
+   1. margin  外边距
+   2. border  边框线
+   3. padding  内边距
+   4. content  内容
 
- 
+2. 盒子的content由padding和content组成
 
-​	3、注意：在实际项目开发中，我们优先使用第2种方案。
+3. 区别外边距和内边距是以边框为参照
 
-## 1.15. CSS盒子模型
+4. 系统默认外边距为**8px**
 
-### **1.15.1.** ***\*基础知识\****
+### 盒子模型样式
 
-1、每个元素都是一个盒子，一个盒子由margin（外边距），border（边框线）,padding（内边距）和content（内容）组成。
+#### 外边距(margin)
 
-2、IE的盒子中的content又由padding和content组成。
+外边距指元素边框线之外的距离
 
-3、区别外边距和内边距是以边框为参照。
+- 可选写法
 
-4、系统默认外边距为8px。
+```css
+margin、margin-left、margin-right、margin-top、margin-bottom
+```
 
-### **1.15.2.** ***\*盒子模型元素\****
+其中margin可用来设置任意一个边的边距，可以带1至4个参数
 
-1、外边距(margin)
+参数数量对应的写法如下
 
-外边距指元素边框线之外的距离。
+```
+1个参数上下左右外边距均为apx
+2个参数上下外边距为apx，左右外边距为bpx
+3个参数上外边距为apx，下外边距为cpx，左右外边距为bpx
+4个参数四个参数依次对应上、右、下、左外边距
+```
 
-​	margin-left、margin-right、margin-top、margin-bottom
+#### 内边距（padding）
 
-​	margin:可用来设置任意一个边的边距，可以带1至4个参数。
+内边距指元素的文本内容与边框之间的距离，用法与margin完全一样
 
-​		1个(apx)：表示上下左右都有这样的外边距apx
+#### 边框(border)
 
-​		2个(apx bpx)：表示上下外边距为apx，左右外边距为bpx
+```css
+border-width:边框线宽度;
+border-style:边框线样式;
+border-color:边框线颜色;
+```
 
-​		3个(apx bpx cpx)：表示上外边距为apx，下外边距为cpx，左右外边距为bpx
+- 复合写法（简写）
 
-​		4个(apx bpx cpx dpx)：表示上为apx,右为bpx,下为cpx,左为dpx
 
-2、内边距（padding）
+```css
+border:border-width border-style border-color;
+```
 
-内边距指元素的文本内容与边框之间的距离，用法与margin完全一样。
+> 注意：三个参数可以不按照顺序写
+>
 
-3、边框(border)
+#### 盒子的真实尺寸
 
-​	border-width:边框线宽度
+盒子宽度 =  width + padding左右 + border左右
 
-​	border-style:边框线样式
+盒子高度 = height + padding上下 + border上下
 
-​	border-color:边框线颜色
+## 定位(position)
 
-复合写法（简写）：
+#### 定位的作用
 
-​		border:border-width border-style border-color;
+定位可以设定元素在文档中的位置
 
-​		注意：border-width border-style border-color这三个参数没有位置之分。
+> 注意：定位会将标签转换为块级标签
 
-4、盒子的真实尺寸
+#### 定位的属性
 
-​	盒子宽度 = width + padding左右 + border左右
+- static:静态定位
 
-​	盒子高度 = height + padding上下 + border上下
+默认值，没有定位，不能设置偏移值(left/top/right/bottom)，占用标准流（文档流）
 
- 
+- relative:相对定位
 
-## 1.16. 定位（position)（重点）
 
-### **1.16.1.** ***\*作用\****
+占用标准流（文档流），它会出现在文档流中它该出现的位置。可以通过设置偏移值改变其位置。它相对于自身所占的位置做偏移。
 
-设定元素在文档中的位置。会将标签（元素）转换为块级。
+- absolute:绝对定位
 
-### **1.16.2.** ***\*定位分类（\*******\*定位的\*******\*属性）\****
 
-1）static:静态定位
+脱离文档流，相对于由relative定义的父元素做偏移，如无则默认为body标签。
 
-​		默认值，没有定位，不能设置偏移值(left/top/right/bottom)，占用标准流（文档流）
+绝对定位一般与相对定位结合使用，它相对第一个由relative定义的祖先元素做偏移，
 
-2）relative:相对定位
+> 在项目开发中，一般用relative+absolute结合使用。
 
-​	占用标准流（文档流），它会出现在文档流中它该出现的位置。可以通过设置偏移值改变其位置。它相对于自身所占的位置做偏移。
+- fixed:固定定位
 
-3）absolute:绝对定位
 
-​		脱离文档流，相对于由relative定义的父元素做偏移，如无则默认为body标签。
+脱离文档流，相对于浏览器窗口左上角（0，0）做偏移，它跟父级的定位没有任何关系
 
-​	绝对定位一般与相对定位结合使用，它相对的父级是relative定义的元素做偏移。relative的元素必须是absolute的父级。
+> 该属性一般在开发中用来固定导航栏。
+>
 
-​	在项目开发中，一般用relative+absolute结合使用。
+#### z-index
 
-4）fixed:固定定位
+当多个元素添加**绝对定位**时，如果位置相同，各个标签将会叠加在一起，此时可以使用z-index样式设置元素显示的层次
 
-​	脱离文档流，相对于浏览器窗口左上角（0，0）做偏移，它与relative设定的对象没有关系，也就是说，它跟父级的定位没有任何关系。
+> 文档流默认的z-index的值为0。
+>
+> z-index属性对使用static、relative和fixed定位的标签无效，其只对absolute定位的标签有效
+>
 
-​	一般在开发中用来固定导航栏。
+## 多列（分栏）
 
-#### 1.16.2.1. z-index
+- column-count 
+  - 规定元素应该被分隔的列数（栏数）
 
-当多个元素添加绝对定位，元素将会叠加在一起，使用z-index可以设置元素显示的层次。
-
-​	文档流默认的z-index的值为0。
-
-​	用在static和relative元素上将无效。
-
-## 1.17. 多列（分栏）
-
-1、column-count 规定元素应该被分隔的列数（栏数）。
-
+```
 column-count: number|auto;
+```
 
-2、column-gap 设置栏间距。
+- column-gap
+  - 设置栏间距
 
+```
 column-gap: length|normal;
+```
 
-3、column-rule 设置栏间分隔线。
+- column-rule
 
-1）column-rule-style：设置线型。
+  - 设置栏间分隔线
 
-属性值：
+  - column-rule-style：设置线型。
 
-none 没有分隔线
+    - 属性值
 
-hidden 隐藏线
 
-dotted 点线
+    - ```css
+      none	没有分隔线
+      hidden	隐藏线
+      dotted	点线
+      dashed	虚线
+      solid	实线
+      double	双线
+      groove	3D沟槽效果
+      ridge	3D脊状效果
+      inset	3D左上角阴影效果
+      outset	3D右下角阴影效果
+      ```
 
-dashed 虚线
+    - 注意：3D线型在分栏中没有3D效果，会当做实线处理
 
-solid 实线
+  - column-rule-width
+    - 设置线宽
+  - column-rule-color
+    - 设置分隔线颜色。
 
-double 双线
+  - 复合写法：`column-rule:width style color;`
 
-groove 3D沟槽效果
 
-ridge 3D脊状效果
+- column-width
+  - 设置栏宽
 
-inset 3D左上角阴影效果
-
-outset 3D右下角阴影效果
-
-注意：
-
-3D线型在分栏中没有3D效果，会当做实线处理。
-
-2）column-rule-width：设置线宽。
-
-3）column-rule-color：设置分隔线颜色。
-
-4）简洁（复合）写法：
-
-column-rule:width style color;
-
-4、column-width 设置栏宽。
-
+```
 column-width: length|auto;
+```
 
-5、columns		是column-width 和 column-count 的简写方式。
+- columns
+  - column-width 和 column-count 的简写方式。
 
+```
 columns: width count;
+```
 
- 
+## CSS3
 
-## 1.18. CSS3的主要新属性
+### 新属性
 
-​	1）增加了选择器
+1. 增加了选择器
 
-​	2）阴影
+2. 阴影
 
-​	3）增加了形状转换（2D <-> 3D）
+3. 增加了形状转换（2D <-> 3D）
 
-​	4）增加了变形效果
+4. 增加了变形效果
 
-​	5）动画（过渡动画、帧动画）
+5. 动画（过渡动画、帧动画）
 
-​	6）边框
+6. 边框
 
-​	7）多重背景
+7. 多重背景
 
-​	8）反射
+8. 反射
 
-​	9）文字
+9. 文字
 
-​	10）颜色函数（rgba/hsl/hsla）
+10. 颜色函数（rgba/hsl/hsla）
 
-​	11）滤镜（filter）
+11. 滤镜（filter）
 
-​	12）弹性布局
+12. 弹性布局
 
-​	13）多列布局
+13. 多列布局
 
-​	14）栅格布局
+14. 栅格布局
 
-​	15）盒模型
+15. 盒模型
 
-​	16）Web字体
+16. Web字体
 
-​	17）媒体查询
+17. 媒体查询
 
-## 1.19. CSS3的兼容处理及厂商前缀
+
+### 兼容处理
 
 CSS3不是属于浏览器或同一浏览器的不同版本都支持，所以需要兼容处理，通常的做法就是加厂商前缀。
 
-​	厂商前缀
+```
+IE	-ms-
+Chrome&Safari	-webkit-
+FireFox	-moz-
+Opera	-o-
+```
 
-​		IE： -ms-
+可以进入`www.caniuse.com`网站中查询HTML和CSS的兼容性处理问题
 
-​		Chrome&Safari： -webkit-
+### CSS3文本
 
-​		FireFox： -moz-
+#### 文本阴影
 
-​		Opera： -o-
-
-## 1.20. CSS3文本
-
-### **1.20.1.** ***\*文本阴影\****
-
-主流浏览器都支持，IE9以上支持
-
+```css
 text-shadow:水平偏移距离 垂直偏移距离 [模糊距离] [阴影的尺寸] [颜色] [inset];
+```
 
-### **1.20.2.** ***\*文本自动换行\****
+#### 文本自动换行
 
-主流浏览器都支持
+```
+word-wrap: normal|break-word;
+```
 
-​	word-wrap: normal|break-word;
+#### 单词拆分
 
-### **1.20.3.** ***\*单词拆分\****
+```
+word-break: normal|break-all|keep-all;
+```
 
-主流浏览器都支持
+#### 文本拆分
 
-​	word-break: normal|break-all|keep-all;
+```
+text-wrap: normal|none|unrestricted|suppress;
+```
 
-### **1.20.4.** ***\*文本拆分\****
+#### 文本溢出
 
-所有主流浏览器都不支持
+- 单行文本溢出
 
-​	text-wrap: normal|none|unrestricted|suppress;
 
-### **1.20.5.** ***\*文本溢出\****
+```
+text-overflow: clip|ellipsis|string;
+```
 
-​	1、单行文本溢出（重要）
+实际应用示例
 
-​		text-overflow: clip|ellipsis|string;
+```css
+选择器 {
+    width: px/%/em/rem...;
+    white-space: nowrap; /* 为允许折行 */
+    -ms-text-overflow: ellipsis; /* 处理IE兼容 */
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+```
 
-​		
+- 多行文本溢出
 
-处理文字溢出的CSS样式：
 
-​			width: px/%/em/rem...;
+```css
+选择器 {
+	width: px/%/em/rem...;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 行数;
+    overflow: hidden;
+}
+```
 
-​			white-space: nowrap; /* 为允许折行 */
+### CSS3边框
 
-​			-ms-text-overflow: ellipsis; /* 处理IE兼容 */
+#### 圆角边框
 
-​			text-overflow: ellipsis;
+```
+border-radius: 1-4个length|% / 1-4 length|%;
+```
 
-​			overflow: hidden;
+> 每个半径的四个值的顺序是：左上角，右上角，右下角，左下角。
 
-​	2、多行文本溢出
+### 边框阴影
 
-IE9以下的版本不支持，主要是谷歌支持
+```
+box-shadow: 水平偏移距离 垂直偏移距离 [模糊距离] [阴影的尺寸] [颜色] [inset];
+```
 
-​			width: px/%/em/rem...;
+### 边框图片
 
-​			display: -webkit-box;
+```
+border-image：图片 向内偏移距离 宽度 图像区域超出边框的距离 重复效果;
+```
 
-​			-webkit-box-orient: vertical;
+> 重复效果：round/strech/repeat
+>
 
-​			-webkit-line-clamp: 行数;
+### 颜色函数
 
-​			overflow: hidden;
+#### RGBA
 
-## 1.21. CSS3边框
+```
+rgba(r,g,b,a)
+```
 
-### **1.21.1.** ***\*圆角边框\****
+```
+r:红色取值范围：0-255/0-100%
+g:绿色取值范围：0-255/0-100%
+b:蓝色取值范围：0-255/0-100%
+a:不透明度数  取值范围：0-1的一个小数
+```
 
-​	border-radius: 1-4 length|% / 1-4 length|%;
+#### HSL
 
-​	四个方位的词：top-left/top-right/bottom-left/bottom-right
+```
+hsl(h,s,l)
+```
 
-### **1.21.2.** ***\*边框阴影\****
+```
+h:色调 取值范围：0-360
+s:饱和度    取值范围：0-100%
+l:亮度 取值范围：0-100%
+```
 
-IE9以上支持
+#### HSLA
 
-​	box-shadow: 水平偏移距离 垂直偏移距离 [模糊距离] [阴影的尺寸] [颜色] [inset];
+```
+hsla(h,s,l,a)
+```
 
-### **1.21.3.** ***\*边框图片\****
+```
+h:色调  取值范围：0-360
+s:饱和度 取值范围：0-100%
+l:亮度  取值范围：0-100%
+a:不透明度取值范围：0-1的一个小数
+```
 
-IE11.0及以后版本支持
+### opacity
 
-​	border-image：图片 向内偏移距离 宽度 图像区域超出边框的距离 重复效果;
-
-重复效果：round/strech/repeat
-
-## 1.22. CSS3颜色函数
-
-### **1.22.1.** ***\*RGBA\****
-
-​		rgba(r,g,b,a)
-
-​		r:红色		取值范围：0-255/0-100%
-
-​		g:绿色		取值范围：0-255/0-100%
-
-​		b:蓝色		取值范围：0-255/0-100%
-
-​		a:不透明度	取值范围：0-1的一个小数
-
-### **1.22.2.** ***\*HSL\****
-
-​		hsl(h,s,l)
-
-​		h:色调		取值范围：0-360
-
-​		s:饱和度	 取值范围：0-100%
-
-​		l:亮度		取值范围：0-100%
-
-### **1.22.3.** ***\*HSLA\****
-
-​		hsla(h,s,l,a)
-
-​		h:色调		取值范围：0-360
-
-​		s:饱和度	 取值范围：0-100%
-
-​		l:亮度		取值范围：0-100%
-
-​		a:不透明度	取值范围：0-1的一个小数
-
-## 1.23. opacity
-
-​	调整元素的不透明度，大多数情况下用于做元素的遮罩效果。
+调整元素的不透明度，大多数情况下用于做元素的遮罩效果。
 
 取值范围：0-1的一个小数
 
 ​	IE8及8以下版本不支持opacity，处理兼容的方式，再添加一行代码来处理不透明度：
 
-​		filter:alpha(opacity=数值）	数值的范围：0-100
+​	filter:alpha(opacity=数值）数值的范围：0-100
 
-## 1.24. CSS3渐变
+### 渐变
 
-​	渐变主要用来设置背景或制作三维图。
+渐变主要用来设置背景或制作三维图。
 
-### **1.24.1.** ***\*线性渐变\****
+#### 线性渐变
 
-​		background: linear-gradient(方向或角度, 颜色1 百分比, 颜色2 百分比, ...);
+```
+background: linear-gradient(方向或角度, 颜色1 百分比, 颜色2 百分比, ...);
+```
 
-​		方向：
+- 方向
 
-​			to left:从右向左渐变
 
-​			to right:从左向右渐变
+```
+to left:从右向左渐变
+to right:从左向右渐变
+to top:从下向上渐变
+to bottom:从上向下渐变
+to top left:从右下角向左上角渐变
+to top right:从左下角向右上角渐变
+to bottom left:从右上角向左下角渐变
+to bottom right:从左上角向右下角渐变
+```
 
-​			to top:从下向上渐变
+- 角度
 
-​			to bottom:从上向下渐变
 
-​			to top left:从右下角向左上角渐变
+例如45度角表示为：45deg
 
-​			to top right:从左下角向右上角渐变
+- 颜色取值
 
-​			to bottom left:从右上角向左下角渐变
 
-​			to bottom right:从左上角向右下角渐变
+1. 表示颜色的单词
 
-​		角度：
+2. 16进制颜色
+3. 表示颜色的函数（`rgb()/rgba()/hsl()/hsla()...`)
 
-​			比如45度角，应该表示为：45deg
 
-​		颜色取值：
+#### 径向渐变
 
-​			1）表示颜色的单词
+径向渐变即沿半径方向渐变
 
-​			2）16进制颜色
+```
+background: radial-gradient(形状 渐变大小 at 位置,颜色1 百分比, ..., 颜色n 百分比);
+```
 
-​			3）表示颜色的函数（rgb()/rgba()/hsl()/hsla()...)
+- 形状
 
-### **1.24.2.** ***\*径向渐变(沿半径方向渐变）\****
 
-​		background: radial-gradient(形状 渐变大小 at 位置,颜色1 百分比, ..., 颜色n 百分比);
+```
+ellipse	椭圆径向渐变（默认）
+circle	圆径向渐变
+```
 
-​		形状：
+- 渐变大小
 
-​			ellipse:椭圆径向渐变（默认）
 
-​			circle:圆径向渐变
+```
+farthest-corner	渐变的半径长度为从圆心到离圆心最远的角（默认）
+closest-side	渐变的半径长度为从圆心到离圆心最近的边
+closest-corner	渐变的半径长度为从圆心到离圆心最近的角
+farthest-side	渐变的半径长度为从圆心到离圆心最远的边
+```
 
-​		渐变大小：
+- 位置
 
-​			farthest-corner:渐变的半径长度为从圆心到离圆心最远的角（默认）
 
-​			closest-side:渐变的半径长度为从圆心到离圆心最近的边
+```
+center	设置圆心在中心位置（默认）
+top	设置圆心在顶部位置
+bottom	设置圆心在底部位置
+at 圆心橫坐标 圆心纵坐标设定圆心的位置在指定的（橫坐标，纵坐标）处
+```
 
-​			closest-corner:渐变的半径长度为从圆心到离圆心最近的角
+#### 文字渐变
 
-​			farthest-side:渐变的半径长度为从圆心到离圆心最远的边
+文字渐变不是一种样式，而是一种组合写法
 
-​		位置：
+- 示例
 
-​			center:设置圆心在中心位置（默认）
+```
+选择器 {
+    background-image: 线性渐变或径向渐变;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+```
 
-​			top:设置圆心在顶部位置
+### box-sizing
 
-​			bottom:设置圆心在底部位置
+该样式允许你以某种方式定义某些盒子模型，以适应指定的区域。
 
-​			at 圆心橫坐标 圆心纵坐标: 设定圆心的位置在指定的（橫坐标，纵坐标）处
+```
+box-sizing: content-box/border-box
+```
 
-### **1.24.3.** ***\*文字渐变\****
+> 火狐和谷歌低版本需要厂商前缀
+>
 
-​		background-image: 线性渐变或径向渐变;
+## flex弹性布局
 
-​		-webkit-background-clip: text;
+### 什么是flex布局
 
-​		-webkit-text-fill-color: transparent;
+flex布局也叫弹性布局或者CSS3弹性盒，是浏览器提倡的布局模型
 
-## 1.25. box-sizing
+- 好处
 
-​	允许你以某种方式定义某些元素，以适应指定的区域。
+1. flex布局能够使网页布局更简单、更灵活
+2. flex布局能够避免浮动脱标的问题，可以在当页面需要适应不同的屏幕大小以及设备类型时确保元素拥有恰当的行为的布局方式。
 
-​	box-sizing: content-box/border-box （火狐和谷歌低版本需要厂商前缀）
+- 作用
 
-## 1.26. flex弹性布局
 
-1.什么是flex布局
+1. 提供一种有效的方式对一个容器中的子元素进行排列、对齐和分配空白空间
 
-flex布局也叫弹性布局或者CSS3弹性盒，是浏览器提倡的布局模型，能够使布局网	页更简单、灵活，同时避免浮动脱标的问题，可以在当页面需要适应不同的屏幕大小以	及设备类型时确保元素拥有恰当的行为的布局方式。
+2. flex能够精确灵活地控制块级盒子的布局方式，避免标签脱离文档流的现象发生
 
- 
+3. flex布局非常适合结构化布局
 
-作用
 
-1）能够提供一种更加有效的方式来对一个容器中的子元素进行排列、对齐和分配空白空间。
+### flex布局的组成部分
 
-2）基于flex精确灵活控制块级盒子的布局方式，避免浮动布局中脱离文档流现象发生
+弹性容器添加display:flex的元素，即父元素
 
-3）flex布局非常适合结构化布局
+弹性盒子子元素
 
- 
+主轴默认主轴在水平方向
 
-2.flex布局的组成部分
+侧轴（交叉轴）默认侧轴在垂直方向
 
-弹性容器：添加display:flex的元素，即父元素
+### flex布局的语法
 
-弹性盒子：子元素
+- flex-direction
 
-主轴：默认主轴在水平方向
+修改主轴方向
 
-侧轴（交叉轴）：默认侧轴在垂直方向
+参数
 
- 
+```
+row	横向从左到右排列（左对齐），默认的排列方式
+row-reverse	反转横向排列（右对齐，从后往前排，最后一项排在最前面
+column	纵向排列
+column-reverse	反转纵向排列，从后往前排，最后一项排在最上面
+```
 
-3.flex-direction 修改主轴方向
+- justify-content
 
-参数：
+调整主轴对齐方式
 
-row ：横向从左到右排列（左对齐），默认的排列方式。
+参数
 
-row-reverse ：反转横向排列（右对齐，从后往前排，最后一项排在最前面。
+```css
+flex-start	起点开始依次排列（左对齐）（默认值）
+flex-end	终点开始依次排列（右对齐）
+center	沿主轴居中排列
+space-between	除了第1个和最后1个子元素外，其它子元素等分空白区域
+space-around	所有子元素等分空白区域
+space-evenly	弹性盒子沿主轴均匀排列，弹性盒子与容器之间间距相等 
+```
 
-column ：纵向排列。
+- align-content 调整侧轴对齐方式
 
-column-reverse ：反转纵向排列，从后往前排，最后一项排在最上面。
+参数
 
- 
+```
+flex-start	起点开始依次排列（左对齐）（默认值）
+flex-end	终点开始依次排列（右对齐）
+center		沿主轴居中排列
+space-between	除了第1个和最后1个子元素外，其它子元素等分空白区域
+space-around	所有子元素等分空白区域
+```
 
-4.justify-content调整主轴对齐方式
+- align-items、align-self
 
-参数：
+规定弹性盒子在侧轴的对齐方式
 
-flex-start：起点开始依次排列（左对齐）（默认值）
+参数
 
-flex-end：终点开始依次排列（右对齐）
+```
+flex-start	沿纵轴顶端对齐（默认值）
+flex-end	沿纵轴底端对齐
+center		沿纵轴垂直居中对齐
+baseline	沿纵轴基线对齐
+stretch		纵向拉伸对齐
+```
 
-center：沿主轴居中排列
+- flex-grow
 
-space-between：除了第1个和最后1个子元素外，其它子元素等分空白区域
+规定子元素的放大比例（应用于子元素）
 
-space-around：所有子元素等分空白区域
+参数
 
-space-evenly：弹性盒子沿主轴均匀排列，弹性盒子与容器之间间距相等
+number，默认为0，即如果存在剩余空间，也不放大。
 
- 
+- flex
 
-5.align-content 调整侧轴对齐方式
+规定弹性盒子空间分配（应用于子元素）
 
-参数：
+> 注意：flex可以带1-3个参数。
+>
+> 1. 带1个参数
+>    - 如果该参数无单位，这个数值会被当作flex-grow（放大）的值
+>    - 如果该参数带单位，这个数值会被当作flex-basis（基本宽度）的值
+>    - auto（自动宽度）|initial（初始宽度）|none（无）
+> 2. 带2个参数
+>    1. 第1个参数必须是一个无单位的数值，它会被当作flex-grow的值。
+>    2. 第2个参数：
+>       - 无单位，这个数值会被当作flex-shrink（收缩比率）的值
+>       - 带单位，这个数值会被当作flex-basis（基本宽度）的值
+> 3. 带3个参数
+>    - 第1个参数必须是一个无单位的数值，它会被当作flex-grow的值。
+>    - 第2个参数必须是一个无单位的数值，它会被当作flex-shrink(收缩比率)的值
+>    - 第3个参数必须是一个有效的宽度值（带单位），它会被当作flex-basis（默认基准宽度值）的值
 
-flex-start：起点开始依次排列（左对齐）（默认值）
+参数
 
-flex-end：终点开始依次排列（右对齐）
+```
+auto	等价于 1 1 auto。
+initial	等价于 0 1 auto。 
+none	等价于 0 0 auto。
+inherit	从父元素继承
+```
 
-center：沿主轴居中排列
+- flex-wrap
 
-space-between：除了第1个和最后1个子元素外，其它子元素等分空白区域
+规定弹性盒子是否换行
 
-space-around：所有子元素等分空白区域
+参数
 
- 
-
-6.align-items、align-self规定弹性盒子在侧轴的对齐方式
-
-参数：
-
-flex-start:沿纵轴顶端对齐（默认值）
-
-flex-end:沿纵轴底端对齐
-
-center:沿纵轴垂直居中对齐
-
-baseline:沿纵轴基线对齐
-
-stretch:纵向拉伸对齐
-
- 
-
-7.flex-grow规定子元素的放大比例（应用于子元素）
-
-参数为number，默认为0，即如果存在剩余空间，也不放大。
-
- 
-
-8.flex规定弹性盒子空间分配（应用于子元素）
-
-参数：
-
-auto : 等价于 1 1 auto。
-
-initial : 等价于 0 1 auto。 
-
-none ：等价于 0 0 auto。
-
-inherit ：从父元素继承。
-
-注意:
-
-flex可以带1-3个参数。
-
-1）带1个参数
-
-a)无单位，这个数值会被当作flex-grow（放大）的值
-
-b)带单位，这个数值会被当作flex-basis（基本宽度）的值
-
-c)auto（自动宽度）|initial（初始宽度）|none（无）
-
-2）带2个参数
-
-第1个参数必须是一个无单位的数值，它会被当作flex-grow的值。
-
-第2个参数：
-
-a)无单位，这个数值会被当作flex-shrink（收缩比率）的值
-
-b)带单位，这个数值会被当作flex-basis（基本宽度）的值
-
-3）带3个参数
-
-第1个参数必须是一个无单位的数值，它会被当作flex-grow的值。
-
-第2个参数必须是一个无单位的数值，它会被当作flex-shrink(收缩比率)的值
-
-第3个参数必须是一个有效的宽度值（带单位），它会被当作flex-basis（默认基准宽度值）的值
-
- 
-
-9.flex-wrap规定弹性盒子是否换行
-
-参数:
-
+```
 nowrap	不换行，默认值
-
 wrap	换行
-
 wrap-reverse	以相反的顺序换行
+```
 
- 
+## CSS动画
 
-## 1.27. CSS动画（重难点）
+### 变形(transform）
 
-### **1.27.1.** ***\*变形(transform）\****
+1. 位移效果(translate)
 
-1、位移效果(translate)
 
-​	translate(x,y) 定义 2D 转换，沿着 X 和 Y 轴移动元素。 
+```
+translate(x,y) 	定义 2D 转换，沿着 X 和 Y 轴移动元素
+translateX(n) 	定义 2D 转换，沿着 X 轴移动元素
+translateY(n) 	定义 2D 转换，沿着 Y 轴移动元素
+```
 
-​	translateX(n) 定义 2D 转换，沿着 X 轴移动元素。
+2. 缩放效果(scale)
 
-​	translateY(n) 定义 2D 转换，沿着 Y 轴移动元素。
+```
+scale(x,y) 定义 2D 缩放转换，改变元素的宽度和高度
+scaleX(n) 定义 2D 缩放转换，改变元素的宽度
+scaleY(n) 定义 2D 缩放转换，改变元素的高度
+```
 
-2、缩放效果(scale)
+3. 旋转效果(rotate)
 
-​	scale(x,y) 定义 2D 缩放转换，改变元素的宽度和高度。
-
-​	scaleX(n) 定义 2D 缩放转换，改变元素的宽度。
-
-​	scaleY(n) 定义 2D 缩放转换，改变元素的高度。
-
-3、旋转效果(rotate)
-
-​	rotate(angle,angle) 定义 2D 旋转，在参数中规定角度（-360deg - 360deg）。
-
+```
+rotate(angle,angle) 定义 2D 旋转，在参数中规定角度（-360deg - 360deg）。
 rotateX(angle)
-
 rotateY(angle)
+```
 
-4、变形效果(skew)
+4. 变形效果(skew)
 
-​	skew(x-angle,y-angle) 定义 2D 倾斜转换，沿着 X 和 Y 轴。  
+```
+skew(x-angle,y-angle) 定义 2D 倾斜转换，沿着 X 和 Y 轴。  
+skewX(angle) 定义 2D 倾斜转换，沿着 X 轴。
+skewY(angle) 定义 2D 倾斜转换，沿着 Y 轴。
+```
 
-​	skewX(angle) 定义 2D 倾斜转换，沿着 X 轴。
+5. 矩阵形式变形（仅需了解）
 
-​	skewY(angle) 定义 2D 倾斜转换，沿着 Y 轴。
+matrix(a,b,c,d,e,f)  定义 2D变形，使用了6个值的矩阵
 
-5、矩阵形式变形（了解）
+6个值的矩阵关系如下：
 
-​	matrix(a,b,c,d,e,f)  定义 2D变形，使用了6个值的矩阵。表示如下：
-
-​		a  c  e
-
-​		b  d  f
-
-​		0  0  1
+```
+a  c  e
+b  d  f
+0  0  1
+```
 
 matrix用一个3*3的矩阵表示，a和b列表示x轴，c和d列表示y轴，e和f列表示z轴
 
-​	a和d表示缩放（如果没有缩放，值设为1）
+- a和d表示缩放（如果没有缩放，值设为1）
 
-​	b和c表示扭曲（如果没有扭曲，值为0）
+- b和c表示扭曲（如果没有扭曲，值为0）
 
-​	e和f表示位移（如果没有位移，值为0）
+- e和f表示位移（如果没有位移，值为0）
 
- 
 
-​	如果旋转角度为θ,它会影响到a,b,c,d的值：
+如果旋转角度为θ,它会影响到a,b,c,d的值，即
 
-​		a = cosθ
+- a = cosθ
 
-​		b = sinθ
+- b = sinθ
 
-​		c = -sinθ
+- c = -sinθ
 
-​		d = cosθ
+- d = cosθ
 
-​	如果扭曲skew(θ1,θ2)，会影响到b和c的值：
 
-​		b = tanθ1
+如果扭曲skew(θ1,θ2)，会影响到b和c的值：
 
-​		c = tanθ2
+- b = tanθ1
 
- 
+- c = tanθ2 
 
-​	每次旋转和扭曲都会产生一个新矩阵，最终形成的多个矩阵要做乘法运算。
 
-​	如果对一个元素同时有旋转、扭曲、缩放和位移，这里需要用到多个矩阵相乘，要优先考虑旋转和缩放！！！
+每次旋转和扭曲都会产生一个新矩阵，最终形成的多个矩阵要做乘法运算。
 
-### **1.27.2.** ***\*transform-origin：调整元素的基点\****
+如果对一个元素同时有旋转、扭曲、缩放和位移，这里需要用到多个矩阵相乘，要优先考虑旋转和缩放！！！
 
-​	transform-origin: x-axis y-axis z-axis;
+### transform-origin
 
-​	属性值：
+调整元素的基点
 
-​		x-axis ：定义视图被置于 X 轴的何处。可能的值：left，center，right，length，%。
+```
+transform-origin: x-axis y-axis z-axis;
+```
 
-​		y-axis ：定义视图被置于 Y 轴的何处。可能的值：top，center，bottom，length，%。
+属性值
 
-​		z-axis ：定义视图被置于 Z 轴的何处。可能的值：length。
+```
+x-axis	定义视图在X轴的位置
+		可选值：left，center，right，length，%
+y-axis	定义视图在Y轴的位置
+		可选值：top，center，bottom，length，%
+z-axis	定义视图在Z轴的位置
+		可选值：length。
+```
 
-### **1.27.3.** ***\*p\*******\*erspective\*******\*：\*******\*让子元素获得透视效果\****
+### perspective
 
-​	perspective:length|none;
+让子元素获得透视效果
 
-​	主流浏览器都不支持，谷歌要加-webkit-，或在长度后加单位。
+```
+perspective:length|none;
+```
 
-### **1.27.4.** ***\*transform-style\****
+### transform-style
 
-​	在3D空间中呈现被嵌套的元素(必须与 transform 属性一同使用)。
+在3D空间中呈现被嵌套的元素(必须与 transform 属性一同使用)。
 
-​	transform-style: flat|preserve-3d;
+```
+transform-style: flat|preserve-3d;
+```
 
-### **1.27.5.** ***\*rotateZ\*******\*(CSS3新增)\****
+### rotateZ
 
- 沿着Z轴的方向顺指针旋转。
+ 沿着Z轴的方向顺指针旋转，需要配合perspective样式使用
 
-### **1.27.6.** ***\*transition:过渡动画\****
+### transition
 
-​	1）常规用法：
+过渡动画
 
-​		transition-property
+1. 常规写法
 
-​		transition-duration
 
-​		transition-timing-function
+```
+transition-property
+transition-duration
+transition-timing-function
+transition-delay
+```
 
-​		transition-delay
+2. 复合写法
 
-​	2）简洁（复合）用法：
+```
+transition: property-name-list|all duration timing-function delay;
+```
 
-​		transition: property-name-list|all duration timing-function delay;
+- transition-property可选值
 
-​		a）可以使用的属性：
 
-​			i)颜色：
+1. 颜色
 
-​				color background-color border-color outline-color
 
-​			ii)位置：
+```
+color background-color border-color outline-color
+```
 
-​				background-position left right top bottom
+2. 位置
 
-​			iii)长度：
+```
+background-position left right top bottom
+```
 
-​				max-height min-height max-width min-width height width
+3. 长度
 
-​				border-width margin padding outline-width outline-offset
+```
+max-height min-height max-width min-width height width
+border-width margin padding outline-width outline-offset
+font-size line-height text-indent vertical-align
+border-spacing letter-spacing word-spacing
+```
 
-​				font-size line-height text-indent vertical-align
+4. 数字
 
-​				border-spacing letter-spacing word-spacing
+```
+opacity visibility z-index font-weight zoom
+```
 
-​			iv)数字：
+5. 组合
 
-​				opacity visibility z-index font-weight zoom
+```
+text-shadow transform box-shadow clip
+```
 
-​			v)组合：
+6. 其它
 
-​				text-shadow transform box-shadow clip
+```
+gradient	自定义关键帧动画
+```
 
-​			vi)其它
+- transition-duration
 
-​				gradient，自定义关键帧动画
+动画持续时间，一般以秒(s)或毫秒(ms)为单位
 
-​		b)duration:动画持续时间，一般以秒(s)或毫秒(ms)为单位
+- transition-timing-function
 
-​		c)timing-function:动画函数
+动画函数
 
-​			i)linear:匀速
+可选值：
 
-​			ii)ease:变速（先慢后快，最后再慢）
+1. linear:匀速
+2. ease:变速（先慢后快，最后再慢）
+3. ease-in:变速（由慢到快）
 
-​			iii)ease-in:变速（由慢到快）
+4. ease-out:变速（由快到慢）
 
-​			iv)ease-out:变速（由快到慢）
+5. ease-in-out:变速（慢速开始，慢速结束）
 
-​			v)ease-in-out:变速（慢速开始，慢速结束）
+6. cubic-bezier(n,n,n,n):自行设定变速，n的值在0-1之间
 
-​			vi)cubic-bezier(n,n,n,n):自行设定变速，n的值在0-1之间
+7. delay:动画延时时间，一般以秒(s)或毫秒(ms)为单位
 
-​		d)delay:动画延时时间，一般以秒(s)或毫秒(ms)为单位
 
- 
+### 关键帧动画
 
-### **1.27.7.** ***\*关键帧动画\****
+#### 设置关键帧
 
-1）设置关键帧
+1. 如果只有两个关键帧
 
-​	a)如果只有两个关键帧
 
-​		@keyframes 动画名 {
+```
+@keyframes 动画名 {
+	0%:{样式表}
+	100%:{样式表}
+}
+或
+@keyframes 动画名 {
+	from:{样式表}
+	to:{样式表}
+}
+```
 
-​			0%:{样式表}
+2. 如果是多个关键帧
 
-​			100%:{样式表}
+```
+@keyframes 动画名 {
+    0%:{样式表}
+    25%:{样式表}
+    60%:{样式表}
+    ...
+    100%:{样式表}
+}
+```
 
-​		}
+> 注意：这里的百分比可以是0%-100%之间的做任意值，一般为升序，也支持倒序
+>
 
-​		或：
+#### 实施动画
 
-​		@keyframes 动画名 {
+- 常规用法
 
-​			from:{样式表}
 
-​			to:{样式表}
+```
+animation-name		来自于@keyframes定义的动画名
+animation-duration	动画持续时间，一般以秒(s)或毫秒(ms)为单位（默认为0）
+animation-timing-function	动画函数
+                inear	匀速（默认值）
+                ease	变速（先慢后快，最后再慢）
+                ease-in	变速（由慢到快）
+                ease-out	变速（由快到慢）
+                ease-in-out	变速（慢速开始，慢速结束）
+				cubic-bezier(n,n,n,n):自行设定变速，n的值在0-1之间
+animation-delay		动画延时时间，一般以秒(s)或毫秒(ms)为单位
+animation-iteration-count	动画循环播放的次数
+				number	按设定次数循环播放（默认次数为1次）
+				infinite	一直循环播放
+animation-direction		动画播放完后是否反向播放
+				normal	不反向（默认值）
+				alternate	反向
+animation-play-state	动画播放或停止播放
+				paused	停止播放
+				running	播放（默认值）
+```
 
-​		}
+- 简洁用法
 
-​	b)如果是多个关键帧
 
-​		@keyframes 动画名 {
-
-​			0%:{样式表}
-
-​			25%:{样式表}
-
-​			60%:{样式表}
-
-​			...
-
-​			100%:{样式表}
-
-​		}
-
-​	注意：这里的百分比一般是升序值，可以是0%-100%之间的做任意值，也可以是倒序。
-
-2）实施动画
-
-​	a)常规用法
-
-​		animation-name：来自于@keyframes定义的动画名
-
-​		animation-duration：动画持续时间，一般以秒(s)或毫秒(ms)为单位（默认为0）
-
-​		animation-timing-function：动画函数
-
-​			i)linear:匀速（默认值）
-
-​			ii)ease:变速（先慢后快，最后再慢）
-
-​			iii)ease-in:变速（由慢到快）
-
-​			iv)ease-out:变速（由快到慢）
-
-​			v)ease-in-out:变速（慢速开始，慢速结束）
-
-vi)cubic-bezier(n,n,n,n):自行设定变速，n的值在0-1之间
-
-animation-delay：动画延时时间，一般以秒(s)或毫秒(ms)为单位
-
-animation-iteration-count：动画循环播放的次数
-
-1)number：按设定次数循环播放（默认次数为1次）
-
-2)infinite：一直循环播放
-
-animation-direction：动画播放完后是否反向播放
-
-1）normal:不反向（默认值）
-
-2）alternate:反向
-
-animation-play-state：动画播放或停止播放
-
-1）paused:停止播放
-
-2）running:播放（默认值）
-
-b)简洁用法
-
+```
 animation:name duration timing-function delay iteration-count direction;
+```
 
- 
+## iconfont图标字体
 
-## 1.28. iconfont图标字体
-
-​	由阿里巴巴提供的一种图标字体。
+由阿里巴巴提供的一种图标字体。
 
 网址：http://iconfont.cn
 
-​	使用方法：
+- 使用方法
 
-​		1）下载iconfont文件，解压后，将部分文件复制到我的网页项目中
+1. 下载iconfont文件，解压后，将部分文件复制到我的网页项目中
+2. 使用字体图标前，先引入iconfont.css文件
 
-​		2）使用字体图标前，先引入iconfont.css文件
+3. 使用字体图标方法
+   1. 用类名
+      - `<div class="iconfont icongerenzhongxin"></div>`
+   2. 用unicode值（微信小程序开发不支持这种写法）
+      - `<div class="iconfont"></div>`
 
-​		3）使用字体图标方法：
 
-​			a)用类名
-
-				<div class="iconfont icongerenzhongxin"></div>
-
-​			b)用unicode值（微信小程序开发不支持这种写法）
-
-				<div class="iconfont"></div>
-
- 
-
-## 1.29. CSS速查表
-
- 
+## CSS速查表(待补充)
