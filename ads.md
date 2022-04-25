@@ -45,19 +45,19 @@ AVL树当且仅当检测到某一节点的平衡因子出错时进行旋转
 
 - LL
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20210123104112780.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3poYW9fbGVpbGVp,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](ads.assets/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3poYW9fbGVpbGVp,size_16,color_FFFFFF,t_70.png)
 
 - RR
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20210123111142437.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3poYW9fbGVpbGVp,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](ads.assets/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3poYW9fbGVpbGVp,size_16,color_FFFFFF,t_70-16508486754472.png)
 
 - LR
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20210123115056269.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3poYW9fbGVpbGVp,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](ads.assets/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3poYW9fbGVpbGVp,size_16,color_FFFFFF,t_70-16508486804814.png)
 
 - RL
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20210123212800497.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3poYW9fbGVpbGVp,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](ads.assets/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3poYW9fbGVpbGVp,size_16,color_FFFFFF,t_70-16508486947036.png)
 
 ### AVL树的最少节点数
 
@@ -108,7 +108,7 @@ splay树插入的时候按照二叉搜索树规则插入，然后对插入的节
 
 > Zig-zag情况包含LR和RL，例如：
 >
-> ![image-20220415123955634](C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\image-20220415123955634.png)
+> ![image-20220415123955634](ads.assets/image-20220415123955634.png)
 >
 > Zig-zig情况包含LL和RR，例如：
 >
@@ -187,7 +187,7 @@ push操作所需时间为1，pop操作所需时间为1，multipop操作所需时
 
 第i个操作的摊还代价C~i~^’^ = C~i~(第i个操作的实际代价) + 当前数据结构的总势能 - 进行第i个操作之前的数据结构的总势能，即
 
-![image-20220415160001755](C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\image-20220415160001755.png)
+![image-20220415160001755](ads.assets/image-20220415160001755.png)
 
 则
 
@@ -197,7 +197,7 @@ push操作所需时间为1，pop操作所需时间为1，multipop操作所需时
 
 即
 
-![image-20220415160030040](C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\image-20220415160030040.png)
+![image-20220415160030040](ads.assets/image-20220415160030040.png)
 
 如果势能函数满足`数据结构总势能 - 原数据结构总势能 >= 0`，则总摊还代价是总实际代价的一个上界。
 
@@ -449,7 +449,6 @@ while ( read a document D ) {
 2. 加入原词典中未有的术语
 
 > 如果文档被删除则将该文档做标记
->
 
 ##### 优化方式
 
@@ -486,12 +485,11 @@ while ( read a document D ) {
    1. 数据检索(data retrieval)性能评估依据
       1. 响应时间
       2. 索引空间
-      2. 注意：数据检索性能评估要在确定性能之后才能进行
+      3. 注意：数据检索性能评估要在确定性能之后才能进行
    2. 信息检索(information retrieval)绩效评估依据
       1. 答案集的相关性
 
 > 注意data retrieval和information retrieval的区别，会考
->
 
 ### 衡量关联性（relevance）的要素
 
@@ -511,7 +509,6 @@ Precision(查准率) P = R~R~ / (R~R~ + I~R~)
 Recall(查全率)    R = R~R~ / (R~R~ + R~N~)
 
 > precision和recall一般成负相关
->
 
 ## 最左堆（leftist heaps）
 
@@ -528,7 +525,7 @@ Recall(查全率)    R = R~R~ / (R~R~ + R~N~)
 
   - Npl(X) = min { Npl(C) + 1 for all C as children of X }
 
--  最左堆定义
+- 最左堆定义
   - 最左堆定义为在堆中的每个节点X的左子树的Npl不小于右子树的Npl
 
 ### 最左堆相关定理
@@ -551,7 +548,7 @@ Recall(查全率)    R = R~R~ / (R~R~ + R~N~)
    3. Swap(H1->Right, H1->Left ) if necessary
 
 
-![image-20220417222232828](C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\image-20220417222232828.png)
+![image-20220417222232828](ads.assets/image-20220417222232828.png)
 
 ![image-20220417222243767](C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\image-20220417222243767.png)
 
@@ -599,7 +596,6 @@ Merge1( PriorityQueue H1, PriorityQueue H2 )
 删除根节点的时间复杂度为O(log^N^)
 
 > 注意：迭代版本和递归版本的归并操作时间复杂度均相同，迭代版本效率高一点
->
 
 ## 斜堆（skew heaps）
 
@@ -629,7 +625,7 @@ Merge1( PriorityQueue H1, PriorityQueue H2 )
 
 以下为合并H1和H2的结果图
 
-![image-20220415185141471](C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\image-20220415185141471.png)
+![image-20220415185141471](ads.assets/image-20220415185141471.png)
 
 #### 迭代实现
 
@@ -667,7 +663,7 @@ merge操作的时间复杂度：摊还时间为O(logN)，最坏情况为O(N)
 
 - 二项队列实例
 
-![image-20220417225239463](C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\image-20220417225239463.png)
+![image-20220417225239463](ads.assets/image-20220417225239463.png)
 
 ### 二项队列定理
 
@@ -799,13 +795,13 @@ ElementType  DeleteMin( BinQueue H )
 
 #### α pruning
 
-![image-20220417231526206](C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\image-20220417231526206.png)
+![image-20220417231526206](ads.assets/image-20220417231526206.png)
 
 > 即爷节点求最大值，子节点求最小值时，如果右孩子的任意孩子中已经有节点小于左孩子的最小值，则直接进行剪枝
 
 #### β pruning
 
-![image-20220417231710434](C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\image-20220417231710434.png)
+![image-20220417231710434](ads.assets/image-20220417231710434.png)
 
 #### α-β pruning
 
@@ -839,11 +835,11 @@ ElementType  DeleteMin( BinQueue H )
 - f(n) 是将原问题分解成子问题和将子问题的解合并成原问题的解的时间。
 - 对上面的式子进行分析，得到三种情况：
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/c16a676ee61546e6a032acee7a5658f4.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzU2MDkxMw==,size_16,color_FFFFFF,t_70#pic_center)
+![在这里插入图片描述](ads.assets/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzU2MDkxMw==,size_16,color_FFFFFF,t_70#pic_center.jpeg)
 
 - 其他形式的主定理
 
-![image-20220415220848287](C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\image-20220415220848287.png)
+![image-20220415220848287](ads.assets/image-20220415220848287.png)
 
 # 贪心算法
 
