@@ -857,3 +857,60 @@ ElementType  DeleteMin( BinQueue H )
 
 霍夫曼编码主要用于文件压缩，它是一种变长编码(即不等长编码)
 
+# NP完全
+
+### P问题
+
+P问题：能够在多项式时间内被解决的问题
+
+P类问题就是所有复杂度为多项式时间的问题的集合
+
+### NP问题
+
+NP问题：能够在多项式时间内使用非确定性算法（non-deterministic）被解决的问题
+
+> 表述为用**非确定图灵机**可以在多项式时间内解决的问题
+
+简单来说就是，必须以**非常规方法**才能**在多项式时间内**解决的问题，就叫做NP问题
+
+通常它们的时间复杂度都是指数变量
+
+可以在多项式的时间里**验证**一个解的问题
+
+### NPC(NP Complete，NP完全)问题
+
+只能通过非确定性算法，在多项式时间内解决的问题，叫做NP完全问题
+
+简单的说，如果任何一个NP问题都能通过一个多项式时间算法转换为某个NP问题，那么这个NP问题就称为NPC问题
+
+##### NPC问题的条件
+
+1. NPC问题一定是一个NP问题
+2. 所有的NP问题都可以约化到它
+
+##### 证明NPC问题
+
+1. 证明该问题至少是一个NP问题
+2. 证明其中一个已知的NPC问题能约化到它(由约化的传递性)
+
+##### NPC问题示例
+
+- Hamiltonian cycle problem
+- Traveling salesman problem
+
+### NP Hard问题
+
+1. NP Hard问题满足NPC问题定义的第二条但不一定要满足第一条(即所有NP问题都可以约化到它，但它不一定是NP问题)，所以NP Hard问题包含了NPC问题。
+2. 若A为NP-Hard，A可以规约到B，则B为NP-Hard
+
+### 四个问题之间的关系
+
+所以P问题一定是NP问题，NPC问题也一定是NP问题，NPC问题也一定是NP Hard问题，但NP Hard问题**不一定**是NP问题
+
+complexity class co-NP = the set of languages L such that
+
+![image-20220426083249309](ads.assets/image-20220426083249309.png)
+
+注意：四种问题之间的关系
+
+![image-20220426083016109](ads.assets/image-20220426083016109.png)
