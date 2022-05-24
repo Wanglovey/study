@@ -1002,3 +1002,10 @@ complexity class co-NP = the set of languages L such that
 假设算法选择了超过 ***K*** 个中心。那么对于大小不超过 ***K*** 的任何集合 ***C\**** ，覆盖半径为 ***r(C\*) > r*** 
 
 由于解法的半径为 ***2r~1~***，则该问题为 ***2-approximation*** 问题
+
+
+
+
+
+# 随机算法
+
